@@ -63,15 +63,16 @@
     footer { background:#111; color:#aaa; text-align:center; padding:30px; margin-top:50px; }
     footer a { color:#25D366; text-decoration:none; }
 
-    /* WhatsApp floating button */
-    .whatsapp-float { position:fixed; bottom:20px; right:20px; z-index:9999; }
-    .whatsapp-float a { display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#25D366; color:white; border-radius:50%; text-decoration:none; font-size:28px; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s; }
-    .whatsapp-float a:hover { transform: scale(1.15); }
-
     /* Social Icons */
-    .social-icons { display:flex; justify-content:center; gap:25px; margin-top:30px; flex-wrap:wrap; }
+    .social-icons { display:flex; justify-content:center; gap:30px; margin-top:20px; flex-wrap:wrap; }
     .social-icons img { width:50px; height:50px; transition: transform 0.3s; }
     .social-icons img:hover { transform: scale(1.1); }
+
+    /* WhatsApp floating button */
+    .whatsapp-float { position:fixed; bottom:20px; right:20px; z-index:9999; }
+    .whatsapp-float a { display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#25D366; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s; }
+    .whatsapp-float a:hover { transform: scale(1.15); }
+    .whatsapp-float img { width:32px; height:32px; }
   </style>
 </head>
 
@@ -151,23 +152,23 @@
   <div class="section">
     <h3>تابعنا وتواصل معنا</h3>
     <div class="social-icons">
-      <a href="https://share.google/a2lxMkXw14rpD9Xll" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Google_Maps_icon.svg" alt="موقعنا على جوجل ماب">
+      <a href="https://share.google/a2lxMkXw14rpD9Xll" target="_blank" title="موقعنا على جوجل ماب">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Google_Maps_icon.svg" alt="Google Maps">
       </a>
-      <a href="https://www.tiktok.com/@per.inch" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="صفحة تيك توك">
+      <a href="https://www.tiktok.com/@per.inch" target="_blank" title="صفحة تيك توك">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
       </a>
-      <a href="https://www.snapchat.com/@per.inch" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="صفحة سناب شات">
+      <a href="https://www.snapchat.com/@per.inch" target="_blank" title="صفحة سناب شات">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="Snapchat">
       </a>
     </div>
   </div>
 
   <!-- WhatsApp floating button -->
   <div class="whatsapp-float">
-    <a href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد"
+    <a href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد" 
        onclick="snaptr('track','LEAD'); ttq.track('Lead');">
-      💬
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
   </div>
 
