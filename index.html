@@ -10,7 +10,6 @@
   (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
   {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};a.queue=[];var s='script';r=t.createElement(s);r.async=!0;r.src=n;var u=t.getElementsByTagName(s)[0];u.parentNode.insertBefore(r,u);})(window,document,
   'https://sc-static.net/scevent.min.js');
-
   snaptr('init', 'dc5cc256-30b0-4ce6-97da-5b167a68f3d3', {});
   snaptr('track', 'PAGE_VIEW');
   </script>
@@ -18,9 +17,7 @@
   <!-- TikTok Pixel -->
   <script>
   !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-    ttq.load('D668DK3C77UBM4LL2H20');
-    ttq.page();
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};ttq.load('D668DK3C77UBM4LL2H20');ttq.page();
   }(window, document, 'ttq');
   </script>
 
@@ -59,20 +56,52 @@
     .service-box:hover { transform:translateY(-8px); box-shadow:0 10px 20px rgba(0,0,0,0.18); }
     .service-box h4 { margin-bottom:12px; font-size:19px; }
 
-    /* Footer */
     footer { background:#111; color:#aaa; text-align:center; padding:30px; margin-top:50px; }
     footer a { color:#25D366; text-decoration:none; }
 
-    /* Social Icons */
     .social-icons { display:flex; justify-content:center; gap:30px; margin-top:20px; flex-wrap:wrap; }
     .social-icons img { width:50px; height:50px; transition: transform 0.3s; }
     .social-icons img:hover { transform: scale(1.1); }
 
-    /* WhatsApp floating button */
-    .whatsapp-float { position:fixed; bottom:20px; right:20px; z-index:9999; }
-    .whatsapp-float a { display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#25D366; border-radius:50%; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s; }
-    .whatsapp-float a:hover { transform: scale(1.15); }
+    .whatsapp-float {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      z-index:9999;
+      text-align:center;
+    }
+    .whatsapp-float div {
+      background:#25D366;
+      color:white;
+      font-weight:bold;
+      padding:5px 10px;
+      border-radius:8px;
+      margin-bottom:5px;
+      font-size:14px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.3);
+      animation: fadePulse 2s infinite;
+    }
+    .whatsapp-float a {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:60px;
+      height:60px;
+      background:#25D366;
+      border-radius:50%;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+      animation: fadePulse 2s infinite;
+    }
+    .whatsapp-float a:hover { transform: scale(1.2); }
     .whatsapp-float img { width:32px; height:32px; }
+
+    /* حركة fade in/out */
+    @keyframes fadePulse {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
   </style>
 </head>
 
@@ -90,7 +119,7 @@
       <h2>حوّل بيتك لتحفة ديكور</h2>
       <p>أفضل حلول بديل الخشب للمجالس، الجدران، والأسقف بتصاميم فخمة تناسب كل الأذواق.</p>
       <a class="btn"
-         href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد"
+         href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20اريد%20معرفة%20المزيد"
          onclick="snaptr('track','LEAD'); ttq.track('Lead');">
         💬 تواصل معنا عبر واتساب
       </a>
@@ -101,7 +130,6 @@
   <div class="section">
     <h3>منتجاتنا المميزة</h3>
     <div class="products">
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80">
         <div class="card-content">
@@ -109,7 +137,6 @@
           <p>تصميم عصري مقاوم للرطوبة وسهل التركيب مناسب للمجالس والغرف.</p>
         </div>
       </div>
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80">
         <div class="card-content">
@@ -117,7 +144,6 @@
           <p>لمسة فخامة مع إضاءة مخفية تعطي شكل راقي جدًا.</p>
         </div>
       </div>
-
       <div class="card">
         <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80">
         <div class="card-content">
@@ -125,7 +151,6 @@
           <p>حلول متكاملة لتجديد منزلك أو مكتبك بأفضل الخامات.</p>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -152,23 +177,31 @@
   <div class="section">
     <h3>تابعنا وتواصل معنا</h3>
     <div class="social-icons">
-      <a href="https://share.google/a2lxMkXw14rpD9Xll" target="_blank" title="موقعنا على جوجل ماب">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Google_Maps_icon.svg" alt="Google Maps">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/966552241558" target="_blank" title="واتساب">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
       </a>
-      <a href="https://www.tiktok.com/@per.inch" target="_blank" title="صفحة تيك توك">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@per.inch" target="_blank" title="تيك توك">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok">
       </a>
-      <a href="https://www.snapchat.com/@per.inch" target="_blank" title="صفحة سناب شات">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="Snapchat">
+      <!-- Snapchat -->
+      <a href="https://www.snapchat.com/add/per.inch" target="_blank" title="سناب شات">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Snapchat">
+      </a>
+      <!-- Google Maps -->
+      <a href="https://maps.app.goo.gl/w3Hsg1vW2p8vUaG96" target="_blank" title="موقعنا على جوجل ماب">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Google Maps">
       </a>
     </div>
   </div>
 
-  <!-- WhatsApp floating button -->
+  <!-- WhatsApp floating button مع نص -->
   <div class="whatsapp-float">
-    <a href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد" 
+    <div>تحدث معنا الآن</div>
+    <a href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20اريد%20معرفة%20المزيد" 
        onclick="snaptr('track','LEAD'); ttq.track('Lead');">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     </a>
   </div>
 
