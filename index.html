@@ -3,103 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perinch Decoration | واتساب مباشر</title>
-
-  <!-- ✅ Snap Pixel Tracking -->
-  <!-- استبدل YOUR_PIXEL_ID بالـ Pixel ID من حساب سناب -->
-  <script type='text/javascript'>
-  (function(e,t,n){
-    if(e.snaptr)return;
-    var a=e.snaptr=function(){
-      a.handleRequest?
-      a.handleRequest.apply(a,arguments):
-      a.queue.push(arguments)
-    };
-    a.queue=[];
-    var s='script';
-    var r=t.createElement(s);
-    r.async=!0;
-    r.src=n;
-    var u=t.getElementsByTagName(s)[0];
-    u.parentNode.insertBefore(r,u);
-  })(window,document,'https://sc-static.net/scevent.min.js');
-
-  snaptr('init', 'YOUR_PIXEL_ID');
-  snaptr('track', 'PAGE_VIEW');
-  </script>
-  <!-- ✅ End Snap Pixel -->
+  <title>Perinch Decoration | بديل الخشب الفاخر</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg,#f8f8f8,#ffffff);
-      text-align: center;
-      padding: 60px 15px;
-    }
-
-    .card {
-      background: white;
-      max-width: 450px;
-      margin: auto;
-      padding: 45px 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
+      margin: 0;
+      font-family: "Tahoma", Arial;
+      background: #f7f7f7;
       color: #222;
     }
 
-    p {
-      font-size: 17px;
-      color: #555;
+    header {
+      background: linear-gradient(to left, #111, #333);
+      padding: 25px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+      height: 420px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 600px;
+    }
+
+    .hero-content h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 18px;
       margin-bottom: 25px;
+      color: #eee;
     }
 
     .btn {
       display: inline-block;
-      padding: 16px 30px;
+      padding: 15px 30px;
       background: #25D366;
       color: white;
-      font-size: 19px;
-      font-weight: bold;
+      font-size: 18px;
       text-decoration: none;
       border-radius: 12px;
-      transition: 0.2s;
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: #1ebe5d;
-      transform: scale(1.03);
+      transform: scale(1.05);
     }
 
-    .small {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #888;
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #111;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h4 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .card-content p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .service-box {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .service-box h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #25D366;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="card">
+  <!-- HEADER -->
+  <header>
     <h1>Perinch Decoration</h1>
-    <p>اضغط الزر للتواصل معنا مباشرة عبر واتساب</p>
+    <p>بديل الخشب الفاخر | ديكورات عصرية بأعلى جودة</p>
+  </header>
 
-    <!-- ✅ WhatsApp Direct Link -->
-    <a class="btn"
-       href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد"
-       onclick="snaptr('track','PURCHASE');">
-       💬 تواصل معنا على واتساب
-    </a>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h2>حوّل بيتك لتحفة ديكور</h2>
+      <p>
+        أفضل حلول بديل الخشب للمجالس، الجدران، والأسقف بتصاميم فخمة تناسب كل الأذواق.
+      </p>
 
-    <div class="small">
-      إعلان سناب شات → واتساب مباشر 🚀
+      <a class="btn"
+         href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد">
+        💬 تواصل معنا عبر واتساب
+      </a>
     </div>
   </div>
+
+  <!-- PRODUCTS -->
+  <div class="section">
+    <h3>منتجاتنا المميزة</h3>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+          <h4>بديل خشب للجدران</h4>
+          <p>تصميم عصري مقاوم للرطوبة وسهل التركيب مناسب للمجالس والغرف.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+          <h4>بديل خشب للأسقف</h4>
+          <p>لمسة فخامة مع إضاءة مخفية تعطي شكل راقي جدًا.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+          <h4>ديكورات داخلية كاملة</h4>
+          <p>حلول متكاملة لتجديد منزلك أو مكتبك بأفضل الخامات.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section">
+    <h3>لماذا تختار Perinch Decoration؟</h3>
+
+    <div class="services">
+      <div class="service-box">
+        <h4>✔ جودة عالية</h4>
+        <p>خامات بديل خشب تدوم سنوات.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>✔ تركيب سريع</h4>
+        <p>تنفيذ احترافي بأقل وقت.</p>
+      </div>
+
+      <div class="service-box">
+        <h4>✔ تصميم فاخر</h4>
+        <p>شكل طبيعي كأنه خشب حقيقي.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Perinch Decoration  
+    <br>
+    للتواصل عبر واتساب:
+    <a href="https://wa.me/966552241558">0552241558</a>
+  </footer>
 
 </body>
 </html>
