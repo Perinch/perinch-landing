@@ -5,171 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perinch Decoration | بديل الخشب الفاخر</title>
 
+  <!-- Snap Pixel -->
+  <script type='text/javascript'>
+  (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+  {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};a.queue=[];var s='script';r=t.createElement(s);r.async=!0;r.src=n;var u=t.getElementsByTagName(s)[0];u.parentNode.insertBefore(r,u);})(window,document,
+  'https://sc-static.net/scevent.min.js');
+
+  snaptr('init', 'dc5cc256-30b0-4ce6-97da-5b167a68f3d3', {});
+  snaptr('track', 'PAGE_VIEW');
+  </script>
+
+  <!-- TikTok Pixel -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D668DK3C77UBM4LL2H20');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+
   <style>
-    body {
-      margin: 0;
-      font-family: "Tahoma", Arial;
-      background: #f7f7f7;
-      color: #222;
-    }
+    body { margin:0; font-family:"Tahoma",Arial; background:#f7f7f7; color:#222; }
+    header { background: linear-gradient(to left,#111,#333); padding:25px; text-align:center; color:white; }
+    header h1 { margin:0; font-size:32px; letter-spacing:1px; }
+    header p { margin-top:10px; font-size:16px; color:#ddd; }
 
-    header {
-      background: linear-gradient(to left, #111, #333);
-      padding: 25px;
-      text-align: center;
-      color: white;
+    .hero { 
+      background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat; 
+      height: 450px; display:flex; justify-content:center; align-items:center; text-align:center; color:white; position:relative; 
     }
+    .hero::after { content:""; position:absolute; inset:0; background:rgba(0,0,0,0.55); }
+    .hero-content { position:relative; z-index:2; max-width:650px; }
+    .hero-content h2 { font-size:40px; margin-bottom:15px; }
+    .hero-content p { font-size:20px; margin-bottom:30px; color:#eee; }
 
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-      letter-spacing: 1px;
-    }
+    .btn { display:inline-block; padding:16px 35px; background:#25D366; color:white; font-size:20px; text-decoration:none; border-radius:14px; transition:0.3s; }
+    .btn:hover { background:#1ebe5d; transform:scale(1.08); }
 
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #ddd;
-    }
+    .section { padding:70px 20px; max-width:1200px; margin:auto; }
+    .section h3 { text-align:center; font-size:30px; margin-bottom:50px; color:#111; }
 
-    .hero {
-      background: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80")
-        center/cover no-repeat;
-      height: 420px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
+    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+    .card { background:white; border-radius:20px; overflow:hidden; box-shadow:0 8px 25px rgba(0,0,0,0.15); transition:0.3s; }
+    .card:hover { transform:translateY(-10px); box-shadow:0 12px 30px rgba(0,0,0,0.2); }
+    .card img { width:100%; height:220px; object-fit:cover; transition: transform 0.5s; }
+    .card img:hover { transform: scale(1.05); }
+    .card-content { padding:25px; }
+    .card-content h4 { margin:0 0 12px; font-size:22px; }
+    .card-content p { font-size:16px; color:#555; line-height:1.6; }
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.55);
-    }
+    .services { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; margin-top:50px; }
+    .service-box { background:white; padding:30px; border-radius:18px; width:300px; text-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12); transition:0.3s; }
+    .service-box:hover { transform:translateY(-8px); box-shadow:0 10px 20px rgba(0,0,0,0.18); }
+    .service-box h4 { margin-bottom:12px; font-size:19px; }
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 600px;
-    }
+    /* Footer */
+    footer { background:#111; color:#aaa; text-align:center; padding:30px; margin-top:50px; }
+    footer a { color:#25D366; text-decoration:none; }
 
-    .hero-content h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
+    /* WhatsApp floating button */
+    .whatsapp-float { position:fixed; bottom:20px; right:20px; z-index:9999; }
+    .whatsapp-float a { display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#25D366; color:white; border-radius:50%; text-decoration:none; font-size:28px; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s; }
+    .whatsapp-float a:hover { transform: scale(1.15); }
 
-    .hero-content p {
-      font-size: 18px;
-      margin-bottom: 25px;
-      color: #eee;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #25D366;
-      color: white;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #1ebe5d;
-      transform: scale(1.05);
-    }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section h3 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 40px;
-      color: #111;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card-content h4 {
-      margin: 0 0 10px;
-      font-size: 20px;
-    }
-
-    .card-content p {
-      font-size: 15px;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 40px;
-    }
-
-    .service-box {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      width: 280px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .service-box h4 {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    footer {
-      background: #111;
-      color: #aaa;
-      text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-    }
-
-    footer a {
-      color: #25D366;
-      text-decoration: none;
-    }
+    /* Social Icons */
+    .social-icons { display:flex; justify-content:center; gap:25px; margin-top:30px; flex-wrap:wrap; }
+    .social-icons img { width:50px; height:50px; transition: transform 0.3s; }
+    .social-icons img:hover { transform: scale(1.1); }
   </style>
 </head>
 
@@ -185,12 +87,10 @@
   <div class="hero">
     <div class="hero-content">
       <h2>حوّل بيتك لتحفة ديكور</h2>
-      <p>
-        أفضل حلول بديل الخشب للمجالس، الجدران، والأسقف بتصاميم فخمة تناسب كل الأذواق.
-      </p>
-
+      <p>أفضل حلول بديل الخشب للمجالس، الجدران، والأسقف بتصاميم فخمة تناسب كل الأذواق.</p>
       <a class="btn"
-         href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد">
+         href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد"
+         onclick="snaptr('track','LEAD'); ttq.track('Lead');">
         💬 تواصل معنا عبر واتساب
       </a>
     </div>
@@ -199,7 +99,6 @@
   <!-- PRODUCTS -->
   <div class="section">
     <h3>منتجاتنا المميزة</h3>
-
     <div class="products">
 
       <div class="card">
@@ -232,23 +131,44 @@
   <!-- SERVICES -->
   <div class="section">
     <h3>لماذا تختار Perinch Decoration؟</h3>
-
     <div class="services">
       <div class="service-box">
         <h4>✔ جودة عالية</h4>
         <p>خامات بديل خشب تدوم سنوات.</p>
       </div>
-
       <div class="service-box">
         <h4>✔ تركيب سريع</h4>
         <p>تنفيذ احترافي بأقل وقت.</p>
       </div>
-
       <div class="service-box">
         <h4>✔ تصميم فاخر</h4>
         <p>شكل طبيعي كأنه خشب حقيقي.</p>
       </div>
     </div>
+  </div>
+
+  <!-- SOCIAL & MAP -->
+  <div class="section">
+    <h3>تابعنا وتواصل معنا</h3>
+    <div class="social-icons">
+      <a href="https://share.google/a2lxMkXw14rpD9Xll" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Google_Maps_icon.svg" alt="موقعنا على جوجل ماب">
+      </a>
+      <a href="https://www.tiktok.com/@per.inch" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="صفحة تيك توك">
+      </a>
+      <a href="https://www.snapchat.com/@per.inch" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Snapchat_logo.svg" alt="صفحة سناب شات">
+      </a>
+    </div>
+  </div>
+
+  <!-- WhatsApp floating button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/966552241558?text=شاهدة%20اعلانك%20على%20سناب%20شات%20اريد%20معرفة%20المزيد"
+       onclick="snaptr('track','LEAD'); ttq.track('Lead');">
+      💬
+    </a>
   </div>
 
   <!-- FOOTER -->
